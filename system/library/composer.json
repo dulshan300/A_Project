@@ -1,0 +1,6 @@
+{
+    "require": {
+        "illuminate/database": "^5.2",
+        "twig/twig": "^1.24"
+    }
+}

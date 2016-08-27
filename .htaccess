@@ -1,0 +1,8 @@
+REWRITEENGINE ON
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule 404/ application/error/404.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule (.*)//? index.php?query=$1 [L]
